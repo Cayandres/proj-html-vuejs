@@ -1,11 +1,16 @@
 <script>
+import Navbar from './partials/Navbar.vue'
  export default {
- name: 'Header' 
+ name: 'Header' ,
+ 
+ components:{
+  Navbar
+ }
  }
 </script>
 
 <template>
-  <h1>ciao</h1>
+  <Navbar />
 </template>
 
 <style>
