@@ -1,13 +1,22 @@
 <script>
+import LogoWrapperMain from './partials/LogoWrapperMain.vue';
+import SectionAbout from './partials/SectionAbout.vue';
  export default {
- name: 'Main' 
- }
+ name: 'Main' ,
+ components:{
+    LogoWrapperMain,
+    SectionAbout
+}
+ } 
 </script>
 
 <template>
-<h1>ciao come st</h1>  
+  <LogoWrapperMain />
+  <SectionAbout />
+
+
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

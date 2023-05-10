@@ -58,6 +58,9 @@ export default {
           margin: 5px;
           background-color: $blueDark;
           border-radius: 50%;
+          &:hover{
+            background-color: green;
+          }
           a{
             img{
               height: 15px;
