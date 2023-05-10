@@ -1,6 +1,5 @@
 @import '@fontsource/montserrat/index.css';
 @import '@fontsource/montserrat/700.css';
-@import './partials/vars.scss';
 
 *{
   margin: 0;
@@ -18,5 +17,12 @@ width: 100%;
 }
 .container {
 width: 1200px;
-margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
