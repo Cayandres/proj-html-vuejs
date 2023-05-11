@@ -1,11 +1,13 @@
 <script>
 import LogoWrapperMain from './partials/LogoWrapperMain.vue';
 import SectionAbout from './partials/SectionAbout.vue';
+import SectionFeature from './partials/SectionFeature.vue';
  export default {
  name: 'Main' ,
  components:{
     LogoWrapperMain,
-    SectionAbout
+    SectionAbout,
+    SectionFeature
 }
  } 
 </script>
@@ -13,6 +15,7 @@ import SectionAbout from './partials/SectionAbout.vue';
 <template>
   <LogoWrapperMain />
   <SectionAbout />
+  <SectionFeature />
 
 
 </template>

@@ -55,7 +55,7 @@ export default {
 
 .container-all-width{
   min-height: 100vh;
-  background-color: $blueDark;
+  background-color: $blueDarkPlus;
   .container{
     padding: 210px 0 120px 0;
     .row{
