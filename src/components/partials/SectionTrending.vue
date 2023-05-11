@@ -22,9 +22,9 @@ export default {
               <span>Gioco basato sul medio evo a Firenze</span>
             </div>
             <div class="button">
-              <a href="°">
+
                 <img class="playButton" src="../../assets//image (9).svg" alt="">
-              </a>
+
             </div>
           </div>
           <div class="tag-green">New</div>

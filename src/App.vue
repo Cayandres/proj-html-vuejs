@@ -8,9 +8,9 @@ export default {
   name: 'App',
   components:{
     Header,
+    Jumbotron,
     Main,
     Footer,
-    Jumbotron
   }
   
 }
@@ -20,7 +20,7 @@ export default {
   <Header />
   <Jumbotron />
   <Main />
-  <Footer/>
+  <Footer />
 </template>
 
 <style lang="scss">

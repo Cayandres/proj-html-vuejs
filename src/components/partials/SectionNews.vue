@@ -1,6 +1,7 @@
 <script>
+
 export default {
-  name: 'SectionUpcoming'
+  name: 'SectionNews'
 }
 </script>
 
@@ -108,7 +109,13 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="container-two">
+        <h1>Our News Letter</h1>
+        <input type="text" placeholder="Write your Email">
+    </div>
   </div>
+  
 </template>
 
 
@@ -187,9 +194,28 @@ export default {
             }
 
         
+        }
       }
+     }
+   }
+   .container-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    bottom: -7788px;
+    right: 169px;
+    position: absolute;
+    height: 100px;
+    padding: 70px 30px;
+    width: 1200px;
+    background-color: yellow;
+    input{
+      width: 300px;
+      height: 40px;
+      border-radius: 30px;
     }
-  }
-}
+   }
+
 }
 </style>

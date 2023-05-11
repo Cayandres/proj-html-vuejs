@@ -23,7 +23,7 @@ export default {
   position: absolute;
   bottom: -100px;
   left: 169px;
-  background-color: $blue;
+  background-color: $blueDark;
   border-radius: 10px;
   .images{
     display: flex;

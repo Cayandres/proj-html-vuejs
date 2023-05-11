@@ -10,6 +10,7 @@ import SectionShop from './partials/SectionShop.vue';
 import SectionTestimonials from './partials/SectionTestimonials.vue';
 import SectionTrending from './partials/SectionTrending.vue';
 import SectionUpcoming from './partials/SectionUpcoming.vue';
+
  export default {
  name: 'Main' ,
  components:{
@@ -23,7 +24,7 @@ import SectionUpcoming from './partials/SectionUpcoming.vue';
     SectionMembers,
     SectionTestimonials,
     SectionShop,
-    SectionNews
+    SectionNews,
 }
  } 
 </script>
@@ -39,8 +40,7 @@ import SectionUpcoming from './partials/SectionUpcoming.vue';
   <SectionMembers />
   <SectionTestimonials />
   <SectionShop />
-  <sectionNews />
-  
+  <SectionNews />
 
 </template>
 

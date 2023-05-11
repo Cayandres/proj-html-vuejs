@@ -28,3 +28,54 @@ li{
 a{
   text-decoration: none;
 }
+
+.active{
+  background-color: green;
+}
+
+.subtitle{
+  font-weight: bold;
+  color: $green;
+}
+
+.br-rad{
+  border-radius: 10px;
+}
+
+.big-button{
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: $greenLight;
+  border: 1px solid $green;
+  font-weight: bold;
+  font-size: 1.1rem;
+  svg{
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+  &:hover{
+    background: none;
+    color: $green;
+  }
+}
+.play{
+  color: black;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: $greenLight;
+  border-radius: 50%;
+  line-height: 65px;
+  margin-left: 10px;
+  svg{
+    height: 20px;
+  }
+}
+
+.buttons{
+  display: flex;
+}
