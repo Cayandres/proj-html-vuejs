@@ -6,32 +6,38 @@ export default {
 
 <template>
   <div class="container-all-widht">
-    <div class="container">
-      <span>Tranding games</span>
-      <h2>Choose who is the best in the world!</h2>
-      <div class="buttons">
-        <button>a</button>
-        <button>b</button>
-      </div>
-      <div class="cards-container">
-        <div class="card">
-          <div class="image-card">
-            <img src="../../assets/1.png" alt="#">
-            <img class="image-position" src="../../assets/1.png" alt="#">
-          </div>
-          <div class="description">
-            <h3>Ninja Warrior Gaming</h3>
-            <div class="square-info">
-              <div class="socials">
-                <img src="../../assets/image (13).svg" alt="">
-                <img src="../../assets/image (14).svg" alt="">
-              </div>
-              <span>  10:45 </span>
-              <span>10 ottobre, 2032</span>
-              <button>ciao</button>
+    <div class="container-opaco">
+      <div class="container">
+        <span class="subtitle">Upcoming Match</span>
+        <h2 class="white">Choose who is the best in the weorld!</h2>
+        <div class="buttons">
+          <button class="arrow-right"><a class="" href="#">
+              <svg class="svg-inline--fa fa-arrow-left-long" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left-long" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"></path></svg></a> 
+            </button>
+          <button class="active white"><a class="" href="#">
+            <svg class="svg-inline--fa fa-arrow-right-long white" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z"></path></svg></a> 
+          </button>
+        </div>
+        <div class="cards-container">
+          <div class="card">
+            <div class="image-card">
+              <img src="../../assets/1.png" alt="#">
+              <img class="image-position" src="../../assets/1.png" alt="#">
             </div>
-
-
+            <div class="description">
+              <h3>Ninja Warrior Gaming</h3>
+              <div class="square-info">
+                <div class="socials">
+                  <img src="../../assets/image (13).svg" alt="">
+                  <img src="../../assets/image (14).svg" alt="">
+                </div>
+                <span>  10:45 </span>
+                <span>10 ottobre, 2032</span>
+                <button>ciao</button>
+              </div>
+  
+  
+            </div>
           </div>
         </div>
       </div>
@@ -41,23 +47,39 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../../scss/partials/vars.scss' as*;
 .container-all-widht{
   min-height: 100vh;
-  background-color: #3d3d62;
+  background-image: url(../../assets/v-bg.png);
+  position: relative;
   .container{
-    position: relative;
+    position: absolute;
+    z-index: 10;
+    left: 175px;
     padding: 100px 0;
-    height: 1000px;
+    height: 1200px;
     h2{
       font-size: 3rem;
       width: 50%;
     }
     .buttons{
-      position: absolute;
-      right: 30px;
-      top: 197px;
-
+    position: absolute;
+    right: 0px;
+    top: 192px;
+    button{
+      margin: 0 5px;
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      border-radius: 50%;
+      line-height: 10px;
+      border: none;
+      color: black;
+      svg{
+        height: 20px;
+      }
     }
+  }
     .cards-container{
       display: flex;
       justify-content: space-between;

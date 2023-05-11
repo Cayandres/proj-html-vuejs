@@ -16,9 +16,21 @@ body{
 .container-all-width{
 width: 100%;
 }
+
 .container {
 width: 1200px;
 margin: 0 auto;
+}
+.container-opaco{
+  &::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 25, 53, 0.5);
+  }
 }
 
 li{
@@ -31,6 +43,10 @@ a{
 
 .active{
   background-color: green;
+}
+
+.active-t{
+  color: green;
 }
 
 .subtitle{
@@ -78,4 +94,12 @@ a{
 
 .buttons{
   display: flex;
+}
+
+.active{
+  background-color: $greenLight !important;
+}
+
+.white{
+  color: white;
 }
