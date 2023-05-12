@@ -9,7 +9,7 @@ export default {
     <div class="container-opaco">
       <div class="container">
         <span class="subtitle">Upcoming Match</span>
-        <h2 class="white">Choose who is the best in the weorld!</h2>
+        <h2 class="white">Keep Eyes & Manage upcoming Battle </h2>
         <div class="buttons">
           <button class="arrow-right"><a class="" href="#">
               <svg class="svg-inline--fa fa-arrow-left-long" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left-long" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"></path></svg></a> 
@@ -19,6 +19,46 @@ export default {
           </button>
         </div>
         <div class="cards-container">
+          <div class="card">
+            <div class="image-card">
+              <img src="../../assets/3.png" alt="#">
+              <img class="image-position" src="../../assets/3.png" alt="#">
+            </div>
+            <div class="description">
+              <h3>Ninja Warrior Gaming</h3>
+              <div class="square-info">
+                <div class="socials">
+                  <img src="../../assets/image (13).svg" alt="">
+                  <img src="../../assets/image (14).svg" alt="">
+                </div>
+                <span>  10:45 </span>
+                <span>10 ottobre, 2032</span>
+                <button class="button br-rad">view more</button>
+              </div>
+  
+  
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-card">
+              <img src="../../assets/2.png" alt="#">
+              <img class="image-position" src="../../assets/2.png" alt="#">
+            </div>
+            <div class="description">
+              <h3>Ninja Warrior Gaming</h3>
+              <div class="square-info">
+                <div class="socials">
+                  <img src="../../assets/image (13).svg" alt="">
+                  <img src="../../assets/image (14).svg" alt="">
+                </div>
+                <span>  10:45 </span>
+                <span>10 ottobre, 2032</span>
+                <button class="button br-rad">view more</button>
+              </div>
+  
+  
+            </div>
+          </div>
           <div class="card">
             <div class="image-card">
               <img src="../../assets/1.png" alt="#">
@@ -33,7 +73,7 @@ export default {
                 </div>
                 <span>  10:45 </span>
                 <span>10 ottobre, 2032</span>
-                <button>ciao</button>
+                <button class="button br-rad">view more</button>
               </div>
   
   
@@ -49,20 +89,10 @@ export default {
 <style lang="scss" scoped>
 @use '../../scss/partials/vars.scss' as*;
 .container-all-widht{
-  min-height: 100vh;
+  min-height: 130vh;
   background-image: url(../../assets/v-bg.png);
   position: relative;
-  .container{
-    position: absolute;
-    z-index: 10;
-    left: 175px;
-    padding: 100px 0;
-    height: 1200px;
-    h2{
-      font-size: 3rem;
-      width: 50%;
-    }
-    .buttons{
+  .buttons{
     position: absolute;
     right: 0px;
     top: 192px;
@@ -80,16 +110,43 @@ export default {
       }
     }
   }
+  .container{
+    position: absolute;
+    z-index: 10;
+    left: 175px;
+    padding: 100px 0;
+    h2{
+      margin: 20px 0;
+      font-size: 3rem;
+      width: 50%;
+    }
+
+    .button{
+    display: flex;
+    padding: 20px 40px;
+    margin: 20px 0;
+    align-items: center;
+    background-color: $greenLight;
+    border: 1px solid $green;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+  &:hover{
+    background: none;
+    color: $green;
+  }
+}
     .cards-container{
       display: flex;
       justify-content: space-between;
+      height: 100%;
       .card{
         padding: 0px;
         width: calc(100%/3.3);
         background-color: #202046;
         border-radius: 10px;
-        overflow: hidden;
         .image-card{
+          height: 300px;
           position: relative;
           border-radius: 10px;
           margin: 25px;
@@ -103,7 +160,7 @@ export default {
             width: 250px;
           }
         img{
-          width: 100%;
+          height: 100%;
         }
       }
       
@@ -144,10 +201,6 @@ export default {
                 width: 50px;
                 border-radius: 50%;
               }
-            }
-            button{
-              width: 40px;
-              margin: 40px 0;
             }
           }
         

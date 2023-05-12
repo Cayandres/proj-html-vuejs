@@ -37,12 +37,14 @@ export default {
 @use '../../scss/main.scss' as*;
 @use '../../scss/partials/vars.scss' as*;
 .container-all-width{
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   z-index: 999;
   width: 100%;
   .container{
+    padding: 10px;
     margin: 0 auto;
-    height: 80px;
+    height: 100px;
 
     .row{
       color: $white;
