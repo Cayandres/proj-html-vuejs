@@ -12,10 +12,10 @@ export default {
         <div class="row">
           <div class="col socials">
             <ul>
-              <li ><a href="#"><img src="../assets/img/image (4).svg" alt="ciao"></a></li>
-              <li class="active"><a href="#"><img src="../assets/img/image (5).svg" alt="ciao"></a></li>
-              <li><a href="#"><img src="../assets/img/image (6).svg" alt="ciao"></a></li>
-              <li><a href="#"><img src="../assets/img/image (7).svg" alt="ciao"></a></li>
+              <li ><a href="#"><img src="/img/image (4).svg" alt="ciao"></a></li>
+              <li class="active"><a href="#"><img src="/img/image (5).svg" alt="ciao"></a></li>
+              <li><a href="#"><img src="/img/image (6).svg" alt="ciao"></a></li>
+              <li><a href="#"><img src="/img/image (7).svg" alt="ciao"></a></li>
             </ul>      
           </div>
           <div class="col title">
@@ -46,7 +46,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: $white;
-  background-image: url(../assets/img/banner1.png);
+  background-image: url(../assets/banner1.png);
   object-fit: cover;
   height: 100vh;
 

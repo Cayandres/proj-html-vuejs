@@ -2,33 +2,54 @@ const headerMenu = [
   {
       label:"Home",
       url:"#",
-      active: true
   },
   {
       label:"Pages",
       url:"#",
-      active: false
   },
   {
       label:"Tournament",
       url:"#",
-      active: false
   },
   {
       label:"Shop",
       url:"#",
-      active: false
   },
   {
       label:"Blog",
       url:"#",
-      active: false
   },
   {
-      label:"contact",
+      label:"Contact",
       url:"#",
-      active: false
   }
 ]
+const cardsFeature = [
+  {
+      image:"/img/feature1.png",
+      url:"#",
+      title:"Live Streaming",
+      description:"Nulla porttitor accumsan tincidunt. Pellentesque in. "
+  },
+  {
+      image:"/img/feature2.png",
+      url:"#",
+      title:"Gaming News",
+      description:"Nulla porttitor accumsan tincidunt. Pellentesque in. "
+  },
+  {
+      image:"/img/feature3.png",
+      url:"#",
+      title:"Great Tournament",
+      description:"Nulla porttitor accumsan tincidunt. Pellentesque in. "
+  },
+  {
+      image:"/img/feature4.png",
+      url:"#",
+      title:"Award Ceremony",
+      description:"Nulla porttitor accumsan tincidunt. Pellentesque in. "
+  },
 
-export{headerMenu}
+]
+
+export{headerMenu, cardsFeature}

@@ -16,7 +16,7 @@ export default {
       <div class="row">
         <div class="col logo">
           <div>
-            <img src="../../assets/img/menulogo.png" alt="logomenu">
+            <img src="/img/menulogo.png" alt="logomenu">
           </div>
         </div>
         <div class="col menu">

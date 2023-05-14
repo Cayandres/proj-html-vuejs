@@ -1,6 +1,17 @@
 <script>
+import { cardsFeature } from '../../data/menus';
+import cardFeature from './sectionCards/cardFeature.vue';
+
 export default {
-  name:'SectionLive'
+  name:'SectionLive',
+  components:{
+    cardFeature
+},
+data(){
+  return{
+  cardsFeature
+  }
+}
 }
 </script>
 
@@ -10,7 +21,6 @@ export default {
 
       <div class="container">
         <div class="row">
-          
           <div class="col">
             <div class="live-thumb">
               <img src="../../assets/v-1.png" alt="img-thumb">
