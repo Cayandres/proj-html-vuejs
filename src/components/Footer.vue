@@ -1,6 +1,12 @@
 <script>
+import { headerMenu } from '../data/menus';
  export default {
- name: 'Footer' 
+ name: 'Footer' ,
+ data(){
+  return{
+    headerMenu
+  }
+ }
  }
 </script>
 
@@ -14,12 +20,7 @@
             </div>
             <div class="col menu">
               <ul>
-                <li>Home</li>
-                <li>Pages</li>
-                <li>Tournament</li>
-                <li>Shop</li>
-                <li>Blog</li>
-                <li>Conctact</li>
+                <li v-for="(link, index) in headerMenu" :key="index">{{ link.label }}</li>
               </ul>
             </div>
           </div>

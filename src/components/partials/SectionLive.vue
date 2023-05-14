@@ -106,7 +106,7 @@ export default {
             transform: translate(-50%, -50%);
             color: $white;
             .circle{
-              padding: 30px;
+              padding: 30px 35px;
               background-color: $green;
               border-radius: 50%;
               margin: 10px 0;

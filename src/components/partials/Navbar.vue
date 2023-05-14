@@ -1,6 +1,12 @@
 <script>
+import { headerMenu } from '../../data/menus';
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  data(){
+    return{
+      headerMenu
+    }
+  }
 }
 </script>
 
@@ -15,12 +21,8 @@ export default {
         </div>
         <div class="col menu">
           <ul>
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Tournament</li>
-            <li>Shop</li>
-            <li>Blog</li>
-            <li>Conctact</li>
+            <li v-for="(link, index) in headerMenu" :key="index">{{ link.label }}</li>
+
           </ul>
         </div>
         <div class="col button">
@@ -63,7 +65,7 @@ export default {
         position: relative;
         div{
           margin: 5px;
-          padding: 10px;
+          padding: 10px 14px;
           background-color: $white;
           border-radius: 50%;
           line-height: 20px;
